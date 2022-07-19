@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types';
 import s from './ContactList.module.css';
 
-const ContactItem = ({ contact, onDelete }) => {
+export const ContactItem = ({ contact, onDelete }) => {
   const { id, name, number } = contact;
   return (
     <li className={s.list__item}>
@@ -20,14 +19,3 @@ const ContactItem = ({ contact, onDelete }) => {
     </li>
   );
 };
-
-ContactItem.propTypes = {
-  contact: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    number: PropTypes.string.isRequired,
-  }),
-  onDelete: PropTypes.func.isRequired,
-};
-
-export { ContactItem };
