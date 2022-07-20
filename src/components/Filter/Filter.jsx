@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import actions from 'components/redux/actions';
+import actions from 'redux/actions';
 import s from './Filter.module.css';
 
 export const Filter = ({ title }) => {
